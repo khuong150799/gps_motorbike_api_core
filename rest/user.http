@@ -1,0 +1,90 @@
+GET http://localhost:3009/api/user/getall
+###
+GET http://localhost:3009/api/user/getbyid/1
+###
+POST http://localhost:3009/api/user/register
+Content-Type: application/json
+
+{
+    "name":"khuong",
+    "account":"leduykhuong",
+    "parent_id":"",
+    "password":"123Dk5678",
+    "email":"leduykhuonggcd@gmail.com",
+    "phone":"1234567890",
+    "address":"tp HCM",
+    "role_id":"1",
+    "web_page":"",
+    "refresh_token":"",
+    "active":""
+   
+}
+  
+
+###
+PUT  http://localhost:3009/api/user/updatebyid/2
+Content-Type: application/json
+
+{
+    "name":"khuong",
+    "account":"duykhuong11",
+    "parent_id":"",
+    "email":"khuongduy7@gmail.com",
+    "phone":"1234567890",
+    "address":"tp HCM",
+    "role_id":"1",
+    "web_page":"",
+    "refresh_token":"",
+    "active":"0"
+   
+}
+
+###
+DELETE  http://localhost:3009/api/user/delete/1217
+###
+PUT  http://localhost:3009/api/user/update-active/1219
+Content-Type: application/json
+
+{
+    "active":"0"
+   
+}
+
+###
+POST   http://localhost:3009/api/user/login
+Content-Type: application/json
+
+{
+    "account":"leduykhuong",
+    "password":"Khuong15079900"
+   
+}
+
+###
+POST   http://localhost:3009/api/user/refresh-token
+Content-Type: application/json
+
+{
+    "userId":"1220",
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMjIwLCJpYXQiOjE2ODAxODUxMTIsImV4cCI6MTY4MDE4NTI5Mn0.-CgMvignx-nmQ20e7Oa25juOV5R3d6f4XgcMRNC0anI"
+   
+}
+
+###
+POST   http://localhost:3009/api/user/forgot-password
+Content-Type: application/json
+
+{
+    "email":"leduykhuonggcd@gmail.com"
+   
+}
+
+###
+put   http://localhost:3009/api/user/change-password/1220
+Content-Type: application/json
+
+{
+    "password":"ZVMggc99",
+    "passwordNew":"Khuong15079900"
+   
+}

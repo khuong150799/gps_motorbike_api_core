@@ -1,0 +1,36 @@
+GET http://localhost:3009/api/device/getall
+###
+GET http://localhost:3009/api/device/getbyid/1
+###
+POST http://localhost:3009/api/device/register
+Content-Type: application/json
+
+{
+    "userid":"1",
+    "name":"device_5000",
+    "imei":"325467865432",
+    "sim_card":"34567865432",
+    "expired_on":"supuser4",
+    "note":""
+}
+
+###
+PUT  http://localhost:3009/api/device/updatebyid/1
+Content-Type: application/json
+
+{
+    "name":"supuser111",
+    "value":"2",
+    "publish":""
+}
+
+###
+DELETE  http://localhost:3009/api/device/delete/2
+###
+PUT  http://localhost:3009/api/device/update-publish/1
+Content-Type: application/json
+
+{
+    "publish":""
+   
+}
